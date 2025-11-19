@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -5,6 +6,8 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Navbar from "@/components/ui/Navbar";
 import Sidebar from "@/components/ui/Sidebar";
+import Button from "@/components/ui/Button";
+
 
 config.autoAddCss = false;
 
@@ -36,6 +39,7 @@ export default function RootLayout({
       >
         <Navbar/>
         <Sidebar/>
+        
         {children}
       </body>
     </html>
